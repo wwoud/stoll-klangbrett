@@ -2,15 +2,10 @@
 %title= "Stoll-Klangbrett"
 %meta{ :content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
 %link{ :href => "css/styles.c35f9a65c688d2ce2b4a800dce895e19.css", :rel => "stylesheet"}
-%script{    :src => "js/replace.71dd9bb74f6c75cda7253d2f59053241.js",
-            :type => "text/javascript"}
 %body
-    %a{ :href => "https://github.com/23x/stoll-klangbrett"}
-        %img{ :"data-canonical-src" => "Gabelknopf.png",
-            :src => "Gabelknopf.png",
-            :style => "position: absolute; top: 0; right: 0; border: 0;",
-            :alt => "Gabeln Sie auf Github"}
-
+    #gabeltaster
+        %a{ :href => "https://github.com/23x/stoll-klangbrett"}
+            %span Gabeln Sie auf Github
     .behaeltnis
         #kopfgrafik
             %img{ :src => "soundsystem.png", :alt => "Axel-Stoll-Klangbrett"}
@@ -194,3 +189,5 @@
                 %source{ :src => "data/wortzufall.ogg", :type => "audio/ogg"}
                 %source{ :src => "data/wortzufall.mp3", :type => "audio/mp3"}
 
+    %script{    :src => "js/replace.js",
+                :type => "text/javascript"}

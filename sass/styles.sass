@@ -1,53 +1,64 @@
-@import compass
-@import skeleton/skeleton
-
-@include global-reset
-
-$num-columns: 3
+* 
+    margin: 0 auto
+    padding: 0
+    border: 0
+    outline: 0
+    line-height: 1.5em
+    text-decoration: none
+    vertical-align: baseline
+    font-weight: normal
+    text-align: center
+    height: auto
+    width: 100%
 
 body
     font: 14px/21px "Blankenburg", Impact, Charcoal, sans-serif
     color: #000
     background: #A00
 
-.behaeltnis
-    @include container 
-    margin-top: 50px
-.klang, #kopfgrafik
-    @include third(1)
-.klang
-    margin-bottom: 20px
-    text-align: center
-#ueberschrift
-    @include third(2)
-.clear
-    @include clear
+a, a:active, a:visited, h2
+    color: #FFF
+a:hover
+    color: #000
 
 h1
-    padding: 0 10px
-    font-size: 80px
-    line-height: 85px
-    margin-bottom: 14px
-    a
-        color: #FFF
-        &:hover
-            color: #FFF
+    font-size: 4em
 h2
-    font-size: 30px
-    line-height: 30px
-    margin-bottom: 10px
+    font-size: 2em
+
+.behaeltnis
+    margin-top: 50px
+    max-width: 95%
+
+#gabeltaster
+    font-size: 2em
+    background: #000
+    border-top: 2px solid white
+    border-bottom: 2px solid white
+    a:hover
+        color: #A00
+
+img
+    max-width: 160px
+    height: auto
+  
+.klang, .taster
+    margin-bottom: 1em
 
 .taster
-    border: 2px solid #000
-    color: #FFF
+    border: 3px solid #000
     cursor: pointer
-    min-height: 40px
-    padding-top: 10px
-    background: darken( #F00, 20%)
-.taster:hover
-    background: darken( #F00, 10%)
+    &:hover
+        background: #000
+
+@media only screen and (min-width: 768px) 
+    .behaeltnis
+        max-width: 768px
+    .klang
+        float: left
+        width: 33.3%
+  
 
 @font-face
     font-family: 'Blankenburg'
     src: url('../font/Blankenburg.ttf') format('truetype')
-
