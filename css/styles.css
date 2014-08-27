@@ -44,22 +44,40 @@ img {
   max-width: 160px;
   height: auto; }
 
-.klang, .taster {
+.klang {
   margin-bottom: 1em; }
 
 .taster {
-  border: 3px solid black;
-  cursor: pointer; }
+  border: 2px solid white;
+  cursor: pointer;
+  background: black; }
   .taster:hover {
-    background: black; }
+    color: black;
+    background: white;
+    border-color: black; }
 
-@media only screen and (min-width: 768px) {
-  .behaeltnis {
-    max-width: 768px; }
-
+@media only screen and (min-width: 550px) {
   .klang {
     float: left;
-    width: 33.3%; } }
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%; }
+
+  #gabeltaster {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 200px;
+    overflow: hidden;
+    height: 200px;
+    z-index: 9999; } }
+@media only screen and (min-width: 840px) {
+  .klang {
+    width: 31%; } }
+@media only screen and (min-width: 1280px) {
+  .behaeltnis {
+    max-width: 1280px; } }
 @font-face {
   font-family: "Blankenburg";
   src: url("../font/Blankenburg.ttf") format("truetype"); }
